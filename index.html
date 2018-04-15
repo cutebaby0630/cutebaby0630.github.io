@@ -1,109 +1,49 @@
 ﻿<html>
 	<head>
-	<meta charset = "UTF-8">
-	
-	<title>Welcome to my blog</title>
-	
-
-	<script type="text/javascript">
-
- 	$(function(){
-	
-	var $block = $('#abgneBlock'),
-		$slides = $('ul.list', $block),
-		_width = $block.width(),
-		$li = $('li', $slides),
-		_animateSpeed = 600;
  
-	
-	var _str = '';
-	for(var i=0, j=$li.length;i<j;i++){
-		
-		_str += '<li class="playerControl_' + (i+1) + '"></li>';
-	}
+ 	<meta charset = "UTF-8"> 
  
-	
-	$('<ul class="playerControl"></ul>').html(_str).appendTo($slides.parent()).css('left', function(){
-		
-		return (_width - $(this).width()) / 2;
-	}).find('li').mouseover(function(){
-		var $this = $(this);
-		$this.addClass('current').siblings('.current').removeClass('current');
-		
-		$slides.stop().animate({
-			left: _width * $this.index() * -1
-		}, _animateSpeed);
- 
-		return false;
-	}).eq(0).mouseover();
-});
+ 	<title>Welcome to my blog</title> 
+	<style type="text/css">
 
+</style>	
 
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous">
+    </script>
+<script>
+$(document).ready(function(){  
 
+  $("button").click(function(){  
+
+    $("#div1").fadeIn("slow");  
+
+    
+
+  });  
+
+});  
+     </script>
 	</head>
 
 	<body>
+
 	<body background="http://get.aca.ntu.edu.tw/getcdb/retrieve/326792/097_0020_001.jpg">
-	<div id="abgneBlock">
-		<ul class="list">
-			<li><a target="_blank" href="#"><img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnCnXMQ83gRJw54fxrMcRQypCwEBadJsDbu7IgwMj5N_v1scpxmw"></a></li>
-			<li><a target="_blank" href="#"><img src="https://scontent.ftpe4-1.fna.fbcdn.net/v/t1.0-9/23131963_1710243782342323_4361729544516391513_n.jpg?_nc_cat=0&oh=9b5184f79cfe20d290a5fe2d67251a7c&oe=5B5F2DF1"></a></li>
-			<li><a target="_blank" href="#"><img src="https://scontent.ftpe4-1.fna.fbcdn.net/v/t1.0-9/13506_945479335485442_8311957589386858688_n.jpg?_nc_cat=0&oh=ee127f5a8bb0838bde6942727ac56bfa&oe=5B68040A"></a></li>
-			<li><a target="_blank" href="#"><img src="img src="https://scontent.ftpe4-1.fna.fbcdn.net/v/t1.0-9/13506_945479335485442_8311957589386858688_n.jpg?_nc_cat=0&oh=ee127f5a8bb0838bde6942727ac56bfa&oe=5B68040A"></a></li>
-			<li><a target="_blank" href="#"><img src="https://scontent.ftpe4-1.fna.fbcdn.net/v/t1.0-9/547726_625255517507827_886677634_n.jpg?_nc_cat=0&oh=917d250a9240d69028a99f8d14a49a56&oe=5B6BCA10"></a></li>
-		</ul>
-	</div>
+
 	
-	#abgneBlock {
-	width: 940px;
-	height: 279px;
-	position: relative;
-	overflow: hidden;
-	border: 1px solid #ccc;
-	}
-	#abgneBlock ul.list {
-	padding: 0;
-	margin: 0;
-	list-style: none;
-	position: absolute;
-	width: 9999px;
-	height: 100%;
-	}
-	#abgneBlock ul.list li {
-	float: left;
-	width: 940px;
-	height: 100%;
-	}
-	#abgneBlock .list img{
-	width: 100%;
-	height: 100%;
-	border: 0;
-	}
-	#abgneBlock ul.playerControl {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	position: absolute;
-	bottom: 5px;
-	right: 5px;
-	height: 14px;
-	}
-	#abgneBlock ul.playerControl li {
-	float: left;
-	width: 23px;
-	height: 14px;
-	cursor: pointer;
-	margin: 0px 2px;
-	background: url(images/rect_ctrl.png) no-repeat 0 0;
-	}
-	#abgneBlock ul.playerControl li.current { 
-	background-position: -23px 0;
-	}
 	<p>
 	<p align=center><font face = "標楷體" color="#000080" size=6>About Me</fomt>
 	<p>
+		
+	 <button>Click</button>
 
+<br>
+
+<br>
+	<div id="div1" style="display:none;background-color:white;">人小，志氣高 </div>
 	
+	<p align=center><img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnCnXMQ83gRJw54fxrMcRQypCwEBadJsDbu7IgwMj5N_v1scpxmw"  > 
 	<p align=center><font face = "標楷體" color="#000000" size=5>Name : <br>尹家琦<br>Birthday : <br>1999.06.30 <br> E-mail : <br>lovemath0630@gmail.com</fomt>
 	<hr>
 	<p align=center><font face = "標楷體" color="#000080" size=6>喜愛的歌曲分享</fomt>
